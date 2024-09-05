@@ -1,0 +1,179 @@
+* {
+	padding:0;
+	margin:0;
+	
+}
+
+body {
+	color: #588da8;
+	font: 14px Sans-Serif;
+	padding: 50px;
+  background-size: contain;
+ 
+	background-image:url(/.images/perry.png);
+}
+
+h1 {
+	text-align: center;
+  border: red;
+  fill: orangered;
+  background: orangered;
+  
+	padding: 20px 0 12px 0;
+	margin: 0;
+}
+h2 {
+	padding: 20px 0 12px 0; 
+}
+
+#container {
+	
+  border-radius:0px;
+	font-size: 16px;
+	text-align: center;
+	position: z;
+	
+}
+
+table{
+
+	border-collapse: collapse;
+	width: 100%;
+	margin: 15px 0;
+  
+  border: 1px black ;
+  border-radius: 10px;
+}
+th {
+	background-color: black;
+	color: rgb(199, 96, 36);
+  text-shadow: black;
+	cursor: pointer;
+	
+}
+form{
+	color:beige;
+}
+th small {
+	font-size: 9px; 
+}
+
+td, th {
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+td a {
+	color: rgb(251, 247, 0);
+	display: block;
+	padding: 5px 10px;
+}
+b {
+	text-decoration: none;
+}
+td b {
+	color: cadetblue;
+	display: block;
+	padding: 5px 10px;
+}
+
+th a {
+	padding-left: 0
+}
+
+td:first-of-type a {
+	background: url(./.images/file.png) no-repeat 10px 50%;
+	padding-left: 35px;
+}
+th:first-of-type {
+	padding-left: 35px;
+}
+
+td:not(:first-of-type) a {
+	background-image: none !important;
+} 
+
+
+tr:hover td {
+	background-color:#69321E;
+}
+
+tr:hover td a {
+	color: rgb(255, 255, 255);
+}
+
+.size{
+
+  color: white;
+  border: black;
+}
+.type{
+  color: whitesmoke;
+}
+
+
+/* icons for file types (icons by famfamfam) */
+
+/* images */
+table tr td:first-of-type a[href$=".jpg"], 
+table tr td:first-of-type a[href$=".png"], 
+table tr td:first-of-type a[href$=".gif"], 
+table tr td:first-of-type a[href$=".svg"], 
+table tr td:first-of-type a[href$=".jpeg"]
+{background-image: url(./.images/image.png);}
+
+/* zips */
+table tr td:first-of-type a[href$=".zip"] 
+{background-image: url(./.images/zip.png);}
+
+/* css */
+table tr td:first-of-type a[href$=".css"] 
+{background-image: url(./.images/css.png);}
+
+table tr td:first-of-type a[href$=".pdf"] 
+{background-image: url(./.images/pdf.png) 10px 50%;;}
+
+/* docs */
+table tr td:first-of-type a[href$=".doc"],
+table tr td:first-of-type a[href$=".docx"],
+table tr td:first-of-type a[href$=".ppt"],
+table tr td:first-of-type a[href$=".pptx"],
+table tr td:first-of-type a[href$=".pps"],
+table tr td:first-of-type a[href$=".ppsx"],
+table tr td:first-of-type a[href$=".xls"],
+table tr td:first-of-type a[href$=".xlsx"]
+{background-image: url(./.images/office.png)}
+
+/* videos */
+table tr td:first-of-type a[href$=".avi"], 
+table tr td:first-of-type a[href$=".wmv"], 
+table tr td:first-of-type a[href$=".mp4"], 
+table tr td:first-of-type a[href$=".mov"], 
+table tr td:first-of-type a[href$=".m4a"]
+{background-image: url(./.images/video.png);}
+
+/* audio */
+table tr td:first-of-type a[href$=".mp3"], 
+table tr td:first-of-type a[href$=".ogg"], 
+table tr td:first-of-type a[href$=".aac"], 
+table tr td:first-of-type a[href$=".wma"] 
+{background-image: url(./.images/audio.png);}
+
+/* web pages */
+table tr td:first-of-type a[href$=".html"],
+table tr td:first-of-type a[href$=".htm"],
+table tr td:first-of-type a[href$=".xml"]
+{background-image: url(./.images/xml.png);}
+
+table tr td:first-of-type a[href$=".php"] 
+{background-image: url(./.images/php.png);}
+
+table tr td:first-of-type a[href$=".js"] 
+{background-image: url(./.images/script.png);}
+
+/* directories */
+table tr.dir td:first-of-type a
+{background-image: url(./.images/folder.png);}
